@@ -59,26 +59,29 @@
       margin-top: 3rem;
     }
 
-    .carte {
+    a.carte {
       background: white;
       border-radius: 16px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.05);
       padding: 2rem;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
 
-    .carte:hover {
+    a.carte:hover {
       transform: translateY(-5px);
       box-shadow: 0 15px 35px rgba(0,0,0,0.1);
     }
 
-    .carte h2 {
+    a.carte h2 {
       font-size: 1.4rem;
       margin-bottom: 1rem;
       color: #2c5364;
     }
 
-    .carte p {
+    a.carte p {
       font-size: 1rem;
       color: #444;
     }
@@ -135,43 +138,47 @@
 </head>
 <body>
   <header>
-    <h1>Propositions pour Demain</h1>
-    <p>Un avenir plus juste et plus solidaire</p>
+    <h1>Bien Commun</h1>
+    <p>Un avenir plus juste, plus vert, plus solidaire</p>
   </header>
 
+  <section class="hero-image">
+    <img src="votre-image.jpg" alt="Image représentative du mouvement" />
+  </section>
+
   <main class="propositions">
-    <div class="carte">
+    <a class="carte" href="education.html">
       <h2>Éducation</h2>
       <p>Refonder l'école publique pour garantir l'égalité des chances, renforcer la formation des enseignants, et moderniser les infrastructures.</p>
-    </div>
-    <div class="carte">
+    </a>
+    <a class="carte" href="energie.html">
       <h2>Transition énergétique</h2>
       <p>Accélérer la sortie des énergies fossiles, développer les énergies renouvelables, et soutenir la sobriété énergétique.</p>
-    </div>
-    <div class="carte">
+    </a>
+    <a class="carte" href="travail.html">
       <h2>Travail</h2>
       <p>Réduire le temps de travail, garantir un emploi digne à chacun, et mieux protéger les travailleurs indépendants et précaires.</p>
-    </div>
-    <div class="carte">
+    </a>
+    <a class="carte" href="defense.html">
       <h2>Défense</h2>
       <p>Assurer une défense souveraine et moderne, renforcer la cybersécurité et favoriser une diplomatie de paix et de coopération.</p>
-    </div>
-    <div class="carte">
+    </a>
+    <a class="carte" href="economie.html">
       <h2>Économie</h2>
       <p>Favoriser une économie circulaire, taxer les grandes fortunes, et investir dans l'innovation et les PME locales.</p>
-    </div>
-    <div class="carte">
+    </a>
+    <a class="carte" href="agriculture.html">
       <h2>Agriculture</h2>
       <p>Soutenir l'agriculture paysanne, protéger la biodiversité, et garantir une alimentation saine et accessible à tous.</p>
-    </div>
-    <div class="carte">
+    </a>
+    <a class="carte" href="culture.html">
       <h2>Culture</h2>
       <p>Accroître les financements publics, soutenir la création indépendante, et garantir l'accès à la culture pour tous les territoires.</p>
-    </div>
-    <div class="carte">
+    </a>
+    <a class="carte" href="territoire.html">
       <h2>Aménagement du territoire</h2>
       <p>Rééquilibrer les dynamiques urbaines et rurales, renforcer les transports publics et revitaliser les centres-bourgs.</p>
-    </div>
+    </a>
   </main>
 
   <section class="contact">
@@ -185,10 +192,11 @@
   </section>
 
   <footer>
-    &copy; Association Bien Commun
+    &copy; 2025 Bien Commun. Tous droits réservés.
   </footer>
 </body>
 </html>
+
 
 
 
