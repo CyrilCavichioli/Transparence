@@ -1,173 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Association pour la Réduction du CO2</title>
-    <style>
-        /* Global styles */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-            line-height: 1.6;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propositions pour Demain</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
 
-        /* Header */
-        header {
-            background-color: #2e8b57;
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
+    body {
+      background-color: #f5f5f5;
+      color: #1e1e1e;
+      line-height: 1.6;
+      padding: 2rem;
+    }
 
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-            text-transform: uppercase;
-        }
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      border-radius: 12px;
+    }
 
-        header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
 
-        /* Navigation bar */
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
+    header p {
+      font-size: 1.2rem;
+      color: #d1d1d1;
+    }
 
-        nav a {
-            color: white;
-            padding: 16px 30px;
-            text-decoration: none;
-            text-align: center;
-            font-weight: 500;
-            transition: background-color 0.3s;
-        }
+    .propositions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
 
-        nav a:hover {
-            background-color: #4CAF50;
-        }
+    .carte {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      padding: 2rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-        /* Section styles */
-        .container {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    .carte:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
 
-        section {
-            margin-bottom: 60px;
-        }
+    .carte h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: #2c5364;
+    }
 
-        section h2 {
-            font-size: 2.5rem;
-            color: #333;
-            margin-bottom: 20px;
-            text-align: center;
-        }
+    .carte p {
+      font-size: 1rem;
+      color: #444;
+    }
 
-        section p {
-            font-size: 1.1rem;
-            text-align: center;
-            color: #666;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        ul li {
-            font-size: 1.2rem;
-            color: #333;
-        }
-
-        /* Call to action button */
-        .cta-button {
-            display: inline-block;
-            background-color: #2e8b57;
-            color: white;
-            padding: 15px 40px;
-            text-decoration: none;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 1.1rem;
-            margin-top: 30px;
-            transition: background-color 0.3s;
-        }
-
-        .cta-button:hover {
-            background-color: #4CAF50;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        footer p {
-            font-size: 0.9rem;
-        }
-
-    </style>
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Propositions pour Demain</h1>
+    <p>Un avenir plus juste, plus vert, plus solidaire</p>
+  </header>
 
-<header>
-    <h1>Association pour la Réduction du CO2</h1>
-    <p>Un avenir plus vert commence aujourd'hui</p>
-</header>
+  <main class="propositions">
+    <div class="carte">
+      <h2>Transition écologique</h2>
+      <p>Investir massivement dans les énergies renouvelables, la rénovation thermique, et les transports doux.</p>
+    </div>
+    <div class="carte">
+      <h2>Justice sociale</h2>
+      <p>Renforcer les services publics, garantir un revenu minimum décent et lutter contre toutes les formes de discrimination.</p>
+    </div>
+    <div class="carte">
+      <h2>Démocratie participative</h2>
+      <p>Instaurer des assemblées citoyennes, faciliter les référendums, et renforcer la transparence politique.</p>
+    </div>
+    <div class="carte">
+      <h2>Souveraineté numérique</h2>
+      <p>Favoriser les technologies open-source, protéger les données personnelles et garantir un internet libre et neutre.</p>
+    </div>
+  </main>
 
-<nav>
-    <a href="#">Accueil</a>
-    <a href="#mission">Notre Mission</a>
-    <a href="#actions">Nos Actions</a>
-    <a href="#contact">Contact</a>
-</nav>
+  <footer>
+    &copy; 2025 Mouvement Demain. Tous droits réservés.
+  </footer>
+</body>
+</html>
 
-<div class="container">
-    <section id="mission">
-        <h2>Notre Mission</h2>
-        <p>Notre association lutte contre les émissions de CO2 pour préserver notre planète et garantir un avenir plus vert. Nous défendons des décisions fortes et nous agissons à tous les niveaux pour réduire l'impact écologique de nos activités.</p>
-    </section>
-
-    <section id="actions">
-        <h2>Nos Actions</h2>
-        <ul>
-            <li>Transition vers les énergies renouvelables</li>
-            <li>Promotion de la mobilité durable</li>
-            <li>Rénovation énergétique des bâtiments</li>
-        </ul>
-        <p>Ces actions sont au cœur de notre combat pour un environnement plus sain et une société moins dépendante du carbone.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contactez-nous</h2>
-        <p>Vous souhaitez en savoir plus ou rejoindre notre initiative ? N'hésitez pas à nous contacter :</p>
-        <p>Email : <strong>contact@associationCO2.fr</strong></p>
-        <p>Téléphone : <strong>01 23 45 67 89</strong></p>
-        <a href="mailto:contact@associationCO2.fr" class="cta-button">Rejoignez-nous</a>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2025 Association pour la Réduction du CO2 | Tous droits réservés</p>
-</footer>
 
 </body>
 </html>
